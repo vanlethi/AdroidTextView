@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var txtView = findViewById(R.id.txtView) as TextView
-        txtView.text = "Hello world---Ahihi"
-        txtView.setTextColor(Color.parseColor("#a4c639"));
-
+        txtView.text = getResources().getString(R.string.txtData)
+//        txtView.setTextColor(Color.parseColor("#a4c639"));
+        txtView.setTextColor(getResources().getColor(R.color.colorHotPink))
     }
 }
